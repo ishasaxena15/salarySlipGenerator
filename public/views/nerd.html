@@ -1,0 +1,29 @@
+<div class="outerDiv">
+<div class="innerDiv">
+	<h3> View Salary Slip</h3>
+</div>
+<div class="jumbotron text-center">
+	<div style="" class="table-responsive whiteColorBG">
+	  <table class="table">
+	  	<tr>
+	  		<td>Name</td>
+	  		<td>Pay Period</td>
+	  		<td>Gross Income</td>
+	  		<td>Tax Amount</td>
+	  		<td> Net Income</td>
+	  		<td>Super Income</td>
+	  	</tr>
+	  	<tr>
+
+	  		<td>{{salarySlip.Name}}</td>
+	  		<td>{{salarySlip.payPeriod}}</td>
+	  		<td>{{salarySlip.grossIncome}}</td>
+	  		<td>{{salarySlip.taxAmount}}</td>
+	  		<td>{{salarySlip.netIncome}}</td>
+	  		<td>{{salarySlip.superIncome}}</td>
+	  	</tr>
+	  </table>
+	</div>
+	<button style="" type="button" class="btn btn-primary btn-lg btn-block topMargin" ng-click="goBack()" >Back</button>
+</div>
+</div>

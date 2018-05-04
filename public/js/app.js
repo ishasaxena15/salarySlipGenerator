@@ -1,0 +1,1 @@
+angular.module('sampleApp', ['ui.router', 'appRoutes', 'MainCtrl', 'NerdCtrl', 'GetSalaryService']);

@@ -1,0 +1,28 @@
+{
+	"taxSlabOne" : {
+		"fixAmount" : 0,
+		"VariableRate" : 0,
+		"upperLimit" : 0 
+	},
+	"taxSlabTwo" : {
+		"fixAmount" : 0,
+		"VariableRate" : 0.19,
+		"upperLimit" : 18200 
+	},
+	"taxSlabThree" : {
+		"fixAmount" : 3572,
+		"VariableRate" : 0.325,
+		"upperLimit" : 37000
+	},
+	"taxSlabFour" : {
+		"fixAmount" : 19822,
+		"VariableRate" : 0.37,
+		"upperLimit" : 87000 
+	},
+	"taxSlabFive" : {
+		"fixAmount" : 54232,
+		"VariableRate" : 0.45,
+		"upperLimit" : 180000	
+	},
+	"port" : 8000
+}

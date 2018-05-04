@@ -1,0 +1,54 @@
+<div ng-hide="fetchError" class="outerDiv">
+	<div class="innerDiv">
+		<h3> Please input your personal details</h3>
+	</div>
+	<div class="jumbotron text-center">
+		<form id="user_details" name="userDetailForm">
+		  <div class="form-group row">
+		    <label class="col-sm-3 col-md-3 col-form-label">First Name</label>
+		    <div class="col-sm-9 col-md-9">
+		        <input type="text" class="form-control" name="firstName" ng-model="userDetail.first_name" placeholder="First Name" minlength="3" required>
+		         <p ng-show="userDetailForm.firstName.$error.minlength" class="note">First name is too short.</p>
+		          <p ng-show="userDetailForm.firstName.$error.required && userDetailForm.firstName.$touched" class="note">You first name is required.</p>
+
+		    </div>
+		  </div>
+		  <div class="form-group row">
+		    <label class="col-sm-3 col-md-3 col-form-label">Last Name</label>
+		    <div class="col-sm-9 col-md-9">
+		        <input type="text" class="form-control" name="lastName" ng-model="userDetail.last_name" placeholder="Last Name" minlength="3" required>
+		        <p ng-show="userDetailForm.lastName.$error.minlength" class="note">Last name is too short.</p>
+		        <p ng-show="userDetailForm.lastName.$error.required && userDetailForm.lastName.$touched" class="note">You last name is required.</p>
+		    </div>
+		  </div>
+		  <div class="form-group row">
+		    <label class="col-sm-3 col-md-3 col-form-label">Annual  Salary</label>
+		    <div class="col-sm-9 col-md-9">
+		        <input type="number" class="form-control" name="annualSalary" ng-model="userDetail.annual_salary" min="0" placeholder="Annual  Salary (in USD)" required>
+
+		        <p ng-show="userDetailForm.annualSalary.$invalid && userDetailForm.annualSalary.$touched" class="note">You annual salary is required.</p>
+		    </div>
+		  </div>
+		  <div class="form-group row">
+		    <label class="col-sm-3 col-md-3 col-form-label">Super rate</label>
+		    <div class="col-sm-9 col-md-9">
+		        <input type="number" class="form-control" name="superRate" ng-model="userDetail.super_rate" min="0" max="12" placeholder="0 - 12 %" required>
+		        <p ng-show="userDetailForm.superRate.$error.min" class="note">Super rate cannot be less than 0.</p>
+		        <p ng-show="userDetailForm.superRate.$error.max" class="note">Super rate cannot be greater than 12.</p>
+		        <p ng-show="userDetailForm.superRate.$error.required && userDetailForm.superRate.$touched" class="note">Super rate is required.</p>
+		    </div>
+		  </div>
+		  <div class="form-group row">
+		    <label class="col-sm-3 col-md-3 col-form-label">Pay start date</label>
+		    <div class="col-sm-9 col-md-9">
+		        <input type="date" class="form-control" name="paystartDate" ng-model="startDate" placeholder="Start date" ng-change ="setStartDate(startDate)" required>
+		        <p ng-show="userDetailForm.paystartDate.$invalid && userDetailForm.paystartDate.$touched" class="note">Pay start date is required.</p>
+		    </div>
+		  </div>
+		</form>
+		<button type="button" class="btn btn-primary btn-lg btn-block topMargin" ng-click="submit(userDetailForm.$valid)" ng-disabled="userDetailForm.$invalid">Submit</button>
+	</div>
+</div>
+<div class="outerDiv" ng-if="fetchError">
+	<h3>{{fetchError}}</h3>
+</div>

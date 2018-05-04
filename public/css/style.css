@@ -1,0 +1,25 @@
+body { padding-top:30px; }
+
+.innerDiv {
+	background-color:#235a75;
+	color:white;
+	padding:10px;
+	text-align: center;
+}
+
+.outerDiv {
+	width:80%;
+	margin:auto;
+}
+
+.topMargin {
+	margin-top: 5%;
+}
+
+.whiteColorBG{
+	background-color: white;
+}
+
+.note {
+	color:red;
+}
