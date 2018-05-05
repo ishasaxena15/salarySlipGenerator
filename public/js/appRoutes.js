@@ -5,14 +5,14 @@ angular.module('appRoutes', []).config(['$stateProvider', '$urlRouterProvider', 
 		.state('home', {
 			url: '/',
 			templateUrl: 'views/home.html',
-			controller: 'MainController'
+			controller: 'HomeController'
 		})
 
 		.state('result', {
 			url: '/viewSlip',
 			params: { salarySlip : null},
-			templateUrl: 'views/nerd.html',
-			controller: 'NerdController'
+			templateUrl: 'views/viewSlip.html',
+			controller: 'ViewSlipController'
 		})
 
 	$urlRouterProvider.otherwise('/');

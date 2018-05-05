@@ -1,1 +1,1 @@
-angular.module('sampleApp', ['ui.router', 'appRoutes', 'MainCtrl', 'NerdCtrl', 'GetSalaryService']);
+angular.module('sampleApp', ['ui.router', 'appRoutes', 'HomeCtrl', 'ViewSlipCtrl', 'GetSalaryService']);
