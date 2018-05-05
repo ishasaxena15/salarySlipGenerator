@@ -1,6 +1,6 @@
-# MEAN Stack Single Page Application Starter
+# Salary Slip Generator
 
-This is a repo for a salary slip generator appliation for a Single Page MEAN Stack application. Just download and install the application. 
+This is a repo for a Single Page MEAN Stack application for generating salary slip. Just download and install the application. 
 
 ## Installation
 1. Download the repository
